@@ -2,7 +2,6 @@
 
 # Database credentials
 config.php
-db_connect.php
 connect.php
 .env
 
