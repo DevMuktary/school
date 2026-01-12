@@ -1,10 +1,11 @@
 <?php
 /*
- * This file's only job is to redirect anyone who lands
- * on the main "index.php" to the correct school login page.
+ * This file redirects visitors to the login page.
+ * We use a relative path ("login.php") so it stays on the correct server (Railway).
  */
- 
-header('Location: https://arabic.instituteofmutoon.com/login.php?school=institute-of-mutoon');
-exit();
 
+// Use the 'test-school' slug we created earlier.
+// Later, you can change this to your real school slug.
+header('Location: login.php?school=test-school');
+exit();
 ?>
