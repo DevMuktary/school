@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to {{school_name}}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style type="text/css">
+    body { margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; }
+    table { border-collapse: collapse; width: 100%; }
+    .main-table { width: 100%; max-width: 600px; margin: 0 auto; background-color: #ffffff; }
+    .header { background-color: {{brand_color}}; padding: 20px; text-align: center; color: #ffffff; }
+    .header h1 { margin: 0; font-size: 24px; }
+    .content { padding: 30px 25px; color: #333333; line-height: 1.6; }
+    .content h2 { color: #333333; }
+    .credentials { background-color: #f9f9f9; border: 1px dashed #dddddd; padding: 15px; margin: 20px 0; }
+    .credentials p { margin: 5px 0; }
+    .button-container { text-align: center; margin-top: 30px; }
+    .button { background-color: {{brand_color}}; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+    .footer { background-color: #eeeeee; padding: 20px; text-align: center; color: #777777; font-size: 12px; }
+</style>
+</head>
+<body>
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td bgcolor="#f4f4f4">
+                <table class="main-table" align="center" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="header">
+                            <h1>Welcome to {{school_name}}</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="content">
+                            <h2>Hello {{student_name}},</h2>
+                            <p>We are thrilled to welcome you to {{school_name}}! Your student account has been successfully created.</p>
+                            <p>Please use the following credentials to log into the student portal. We recommend changing your password after your first login.</p>
+                            
+                            <div class="credentials">
+                                <p><strong>Portal URL:</strong> <a href="{{portal_url}}" style="color: {{brand_color}};">Click Here to Login</a></p>
+                                <p><strong>Username:</strong> {{username}}</p>
+                                <p><strong>Password:</strong> <strong style="font-size: 16px;">{{password}}</strong></p>
+                            </div>
+
+                            <p>If you have any questions, please don't hesitate to contact our support team.</p>
+
+                            <div class="button-container">
+                                <a href="{{portal_url}}" class="button" style="color: #ffffff;">Go to Student Portal</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="footer">
+                            <p>&copy; <?php echo date("Y"); ?> {{school_name}}. All Rights Reserved.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

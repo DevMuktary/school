@@ -1,0 +1,15 @@
+# .gitignore
+
+# Database credentials
+config.php
+db_connect.php
+connect.php
+.env
+
+# cPanel logs and system files
+error_log
+.DS_Store
+Thumbs.db
+
+# Vendor folders (if you are using Composer)
+/vendor

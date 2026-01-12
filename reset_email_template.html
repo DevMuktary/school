@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset for {{school_name}}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: 20px auto; background-color: #ffffff; border: 1px solid #dddddd; border-radius: 8px; overflow: hidden; }
+        .header { background-color: {{brand_primary}}; color: #ffffff; padding: 30px 20px; text-align: center; }
+        .header h1 { margin: 0; font-size: 24px; font-weight: bold; }
+        .content { padding: 30px; color: #333333; line-height: 1.6; }
+        .content h2 { color: {{brand_primary}}; }
+        .cta-button {
+            display: inline-block;
+            background-color: {{brand_primary}};
+            color: #ffffff;
+            padding: 12px 25px;
+            margin-top: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer { text-align: center; padding: 20px; font-size: 12px; color: #888888; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{school_name}}</h1>
+        </div>
+        <div class="content">
+            <h2>Password Reset Request</h2>
+            <p>Hello,</p>
+            <p>We received a request to reset your password. If you did not make this request, you can safely ignore this email. Otherwise, please click the button below to set a new password.</p>
+            <p>This link is only valid for 15 Minutes.</p>
+            <a href="{{reset_link}}" class="cta-button">Reset Your Password</a>
+            <p style="margin-top: 30px;">Best regards,<br>The {{school_name}} Team</p>
+        </div>
+        <div class="footer">
+            &copy; {{current_year}} {{school_name}}. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
